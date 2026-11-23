@@ -4,5 +4,5 @@ import App from './App'
 
 test('показывает заголовок', () => {
     render(<App />)
-    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+    expect(screen.getByText(/Несуществующий текст/i)).toBeInTheDocument()
 })
